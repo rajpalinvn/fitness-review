@@ -52,7 +52,13 @@ Flagged files are **rejected and not published**. Test-data identifiers like `@f
 
 ## Latest published items
 
-*(none yet — updated after each sync)*
+| Date | Agent | Work | Path |
+|---|---|---|---|
+| 2026-11-20 | teammate | Design merges report (css-tokens-round, states) | [`teammate/2026-11-20-design-merges/`](teammate/2026-11-20-design-merges/) |
+| 2026-11-20 | tunnel | Tester guide preview `1628ca0` | [`tunnel/2026-11-20-guide-1628ca0/`](tunnel/2026-11-20-guide-1628ca0/) |
+| 2026-11-20 | design | Batch 1b: css-tokens-round | [`design/2026-11-20-css-tokens-round/`](design/2026-11-20-css-tokens-round/) |
+| 2026-11-20 | design | Batch 2: states | [`design/2026-11-20-states/`](design/2026-11-20-states/) |
+| 2026-11-20 | design | Batch 3: badge | [`design/2026-11-20-badge/`](design/2026-11-20-badge/) |
 
 ---
 

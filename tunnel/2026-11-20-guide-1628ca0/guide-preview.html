@@ -1,0 +1,446 @@
+<!doctype html>
+<!-- Preview export of the tester guide, version test-2026-11-20-1628ca0. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FitnessLabs Tester Guide</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#1f2328;--mute:#5b6470;--line:#e3e6ea;--accent:#2563eb;--pass:#15803d;--passbg:#dcfce7;--fail:#b91c1c;--failbg:#fee2e2;--skip:#92400e;--skipbg:#fef3c7}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1115;--card:#171a21;--ink:#e6e8eb;--mute:#9aa3ae;--line:#2a2f38;--accent:#60a5fa;--pass:#4ade80;--passbg:#14301f;--fail:#f87171;--failbg:#3a1616;--skip:#fbbf24;--skipbg:#3a2c0d}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,Segoe UI,sans-serif}
+.wrap{max-width:880px;margin:0 auto;padding:20px 16px 80px}
+header{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;margin-bottom:16px}
+h1{font-size:22px;margin:0}
+h2{font-size:18px;margin:28px 0 6px}
+nav a{color:var(--accent);text-decoration:none;margin-left:12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:10px 0}
+.lead{color:var(--mute);margin:0 0 8px}
+.case{display:grid;gap:8px}
+.case h3{font-size:15px;margin:0}
+.case ol{margin:0;padding-left:20px;color:var(--ink)}
+.expect{color:var(--mute)}
+.expect b{color:var(--ink)}
+.row{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.st{border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:6px;padding:5px 12px;cursor:pointer;font:inherit}
+.st.on[data-s=pass]{background:var(--passbg);color:var(--pass);border-color:var(--pass)}
+.st.on[data-s=fail]{background:var(--failbg);color:var(--fail);border-color:var(--fail)}
+.st.on[data-s=blocked]{background:var(--skipbg);color:var(--skip);border-color:var(--skip)}
+textarea,input[type=text]{width:100%;font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:8px}
+textarea{min-height:56px;resize:vertical}
+.saved{font-size:13px;color:var(--mute)}
+.who{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.who input{width:220px}
+.btn{background:var(--accent);color:#fff;border:0;border-radius:6px;padding:8px 14px;font:inherit;cursor:pointer}
+.progress{font-size:14px;color:var(--mute)}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+.tbl{overflow-x:auto}
+.pill{display:inline-block;border-radius:4px;padding:1px 8px;font-size:13px}
+.pill.pass{background:var(--passbg);color:var(--pass)}.pill.fail{background:var(--failbg);color:var(--fail)}.pill.blocked{background:var(--skipbg);color:var(--skip)}
+.note{color:var(--mute);font-size:13px;white-space:pre-wrap}
+code{background:var(--bg);border:1px solid var(--line);border-radius:4px;padding:0 4px}
+.hide{display:none}
+.flow{list-style:none;display:flex;flex-wrap:wrap;gap:26px;padding:0;margin:10px 0 4px}
+.flow li{position:relative;flex:1 1 150px;max-width:220px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:14px}
+.flow li b{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--accent);color:#fff;font-size:12px;margin-right:6px}
+.flow li:not(:last-child)::after{content:"\2192";position:absolute;right:-21px;top:50%;transform:translateY(-50%);color:var(--mute);font-size:18px}
+.flow li.key{border-color:var(--fail)}
+.loop{color:var(--mute);font-size:14px;margin:0 0 6px}
+@media (max-width:640px){.flow{flex-direction:column;gap:22px}.flow li{max-width:none;flex:none}.flow li:not(:last-child)::after{content:"\2193";right:auto;left:50%;top:auto;bottom:-22px;transform:translateX(-50%)}}
+.rel h3{font-size:15px;margin:10px 0 4px}
+.rel ul{margin:0;padding-left:20px}
+.rel a{color:var(--accent)}
+.ver{font-weight:600}
+.pill.new{background:var(--passbg);color:var(--pass)}.pill.changed{background:var(--skipbg);color:var(--skip)}.pill.removed{background:var(--failbg);color:var(--fail)}
+details{margin:8px 0}summary{cursor:pointer;color:var(--accent)}
+.cmp{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (max-width:640px){.cmp{grid-template-columns:1fr}}
+.cmp select{font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:6px;width:100%}
+.case:target{outline:2px solid var(--accent)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>FitnessLabs Tester Guide</h1>
+    <nav><a href="/" target="_blank">Open the app</a><a href="/tester-guide">Guide</a></nav>
+  </header>
+  <div class="card" style="border-color:var(--skip)"><b>Preview copy.</b> Results are not saved here. Testers use the live guide.</div>
+  <section id="top">
+    <h2>How testing works</h2>
+    <ol class="flow">
+      <li><b>1</b>Get the app link and the test access password from the developer.</li>
+      <li><b>2</b>Open this guide and save your name.</li>
+      <li><b>3</b>Open the app and sign in with your test account.</li>
+      <li><b>4</b>Pick a case below.</li>
+      <li><b>5</b>Do its steps.</li>
+      <li class="key"><b>6</b>Mark Pass, Fail or Blocked and write a note. For Fail, also send a screenshot.</li>
+      <li><b>7</b>Repeat from step 4 with the next case.</li>
+    </ol>
+    <p class="loop">After every update, read "What's new" first, then re-test the cases it lists.</p>
+    <div id="whatsnew"></div>
+  </section>
+  <div id="guide"></div>
+  <div id="results" class="hide"></div>
+</div>
+<script>
+const PREVIEW_RELEASES = {
+  "releases": [
+    {
+      "version": "test-2026-11-20-1628ca0",
+      "commit": "1628ca0",
+      "date": "2026-11-20",
+      "items": [
+        { "type": "new", "text": "Convert to Client: turn a lead into a paying client in 6 steps (Details, Package, Sale & start, Corporate entry, Summary, Payment)." },
+        { "type": "new", "text": "After converting, you see the client number and the receipt number." },
+        { "type": "new", "text": "Pay part now and the rest later: the balance gets a due date and shows under \"Payment due\" on Today." },
+        { "type": "new", "text": "If a payment reference was already used, the app warns you. If you save it anyway, it shows under \"Flagged payments\" on Today for the CEO." },
+        { "type": "new", "text": "Regions: group branches into regions (Settings > Regions). The Branches page can be filtered by region." },
+        { "type": "new", "text": "The branch switcher at the top groups branches by region, and has a search box when there are 6 or more branches." },
+        { "type": "new", "text": "New branch form with Region, City, State, PIN and GSTIN." },
+        { "type": "changed", "text": "The payment method \"Net banking\" is now called \"Bank transfer (NEFT / IMPS / Net banking)\"." }
+      ],
+      "cases": [
+        { "id": "cv-full", "change": "added" },
+        { "id": "cv-required", "change": "added" },
+        { "id": "cv-balance", "change": "added" },
+        { "id": "cv-minimum", "change": "added" },
+        { "id": "cv-numbers", "change": "added" },
+        { "id": "cv-dup-ref", "change": "added" },
+        { "id": "cv-flagged-ceo", "change": "added" },
+        { "id": "cv-bank", "change": "added" },
+        { "id": "cv-cancel", "change": "added" },
+        { "id": "rg-add", "change": "added" },
+        { "id": "br-form", "change": "added" },
+        { "id": "br-region-filter", "change": "added" },
+        { "id": "br-switcher", "change": "added" },
+        { "id": "ac-branches", "change": "changed", "note": "The branch form now asks for more details." }
+      ]
+    },
+    {
+      "version": "test-2026-11-20-4f27efd",
+      "commit": "4f27efd",
+      "date": "2026-11-20",
+      "items": [
+        { "type": "new", "text": "Branches page has a Club Manager column that lists the Club Manager names of each branch." },
+        { "type": "new", "text": "An active branch with no Club Manager shows a \"No Club Manager\" warning badge. The branch is not blocked and keeps working." },
+        { "type": "changed", "text": "The old \"Branch admins\" column is gone. The app now knows a Club Manager by the role itself (IsBranchHead), not by a count of branch admins." }
+      ],
+      "cases": [
+        { "id": "ac-no-cm", "change": "changed", "note": "Re-opened: the warning is now in this version. Look for the badge in the Club Manager column." }
+      ]
+    },
+    {
+      "version": "test-2026-11-19-f87914b",
+      "commit": "f87914b",
+      "date": "2026-11-19",
+      "items": [
+        { "type": "new", "text": "CEO works on all branches without being assigned to any. The Staff list shows \"All branches\" for the CEO." },
+        { "type": "new", "text": "The CEO sees every active branch in the top-bar branch switcher, including branches added later." },
+        { "type": "new", "text": "Packages master (Membership): price history, the branches a package applies to, and its audience." },
+        { "type": "changed", "text": "The Staff form hides the branch picker for the CEO." },
+        { "type": "changed", "text": "The Branches column on Staff shows 2 names and \"+N more\"." },
+        { "type": "changed", "text": "On a phone, the top-bar branch pill shows only an icon." },
+        { "type": "changed", "text": "Guide: roles section rewritten for the 10 fixed roles. Admin, Branch Admin and custom-role cases removed." }
+      ],
+      "cases": [
+        { "id": "auth-admin-reset", "change": "added", "note": "Replaces the old forgot-password email case: email is not set up for testing." },
+        { "id": "ac-roles-fixed", "change": "added" },
+        { "id": "ac-grid-ceo-only", "change": "added" },
+        { "id": "ac-assign-floor", "change": "added" },
+        { "id": "ac-no-cm", "change": "added" },
+        { "id": "ac-own", "change": "added" },
+        { "id": "ac-branches", "change": "changed", "note": "Done as CEO." },
+        { "id": "ac-staff", "change": "changed", "note": "Pick one of the 10 fixed roles." },
+        { "id": "ac-live", "change": "changed", "note": "Uses the permission grid." },
+        { "id": "ac-grid", "change": "changed" },
+        { "id": "ac-scope", "change": "changed", "note": "Branch scope tested with a Club Manager." },
+        { "id": "ac-direct-link", "change": "changed" },
+        { "id": "st-integrations", "change": "changed", "note": "CEO only." }
+      ]
+    }
+  ]
+};
+window.fetch = async (url) => {
+  const body = String(url).startsWith("/__releases") ? PREVIEW_RELEASES : { testers: {} };
+  return new Response(JSON.stringify(body), { status: String(url).startsWith("/__releases") || String(url).startsWith("/__results") ? 200 : 404 });
+};
+</script>
+<script>
+const GUIDE = [
+  { id: "access", title: "How to get in", intro: "Read this once. It has no test cases.", info: [
+    "Open the app with the link at the top of this page, in Chrome or Edge. Keep this guide open in another tab.",
+    "The first time, a Microsoft \"Dev Tunnels\" warning page appears. Click Continue.",
+    "You already entered the test access password to see this page. The browser remembers it for 7 days.",
+    "Sign in to the app with the test account you were given. Passwords are sent separately and are never written here.",
+    "The link works only during testing hours. If it does not load, message the developer before reporting a bug.",
+    "The app is updated while you test. If a page looks odd after an update, press Ctrl+F5 once before reporting.",
+    "All testers share one database. Start every record you create with your initials, for example \"QA-RK Ravi\".",
+    "Do not share the link or the password outside the testing team."
+  ]},
+  { id: "roles", title: "Roles you will test with", intro: "Every staff member has one of 10 fixed roles. What a role can do is set in the permission grid, not in this guide.", info: [
+    "The 10 roles: CEO, Regional Manager, Club Manager, Sales Manager, Sales Executive, MXM, Trainer, Finance, Marketing, HR.",
+    "CEO is the top role: the whole company, every branch, every permission. Only the CEO can change the permission grid.",
+    "Roles are fixed and read-only. Nobody creates, renames or deletes a role, and there are no custom roles.",
+    "What each role can do is in the grid on the Permissions page (/admin/permissions). Each cell is a tick, or a scope: Own (my leads and leads where I have an open follow-up), Branch (my branch or branches), or All (every branch).",
+    "Before testing a rule, open the Permissions page and check what the grid says for that role. If the app does something different from the grid, report it as a bug.",
+    "A branch without a Club Manager shows a warning. It is not blocked: the branch keeps working.",
+    "Forgot your password? Email is not set up for testing, so no reset email arrives. Ask the admin to use \"Reset password\" for you on the Staff page."
+  ]},
+  { id: "auth", title: "Sign-in and session", cases: [
+    { id: "auth-wrong", t: "Wrong password", s: ["Enter your email and a wrong password.", "Click Sign in."], e: "An error shows and you stay on the sign-in page." },
+    { id: "auth-eye", t: "Show password", s: ["Type a password.", "Click the eye button."], e: "The typed password becomes visible, and hides again on a second click." },
+    { id: "auth-first", t: "First sign-in", s: ["Sign in with a brand-new account."], e: "You must change the password before any other page opens." },
+    { id: "auth-remember-off", t: "Remember me off", s: ["Sign in with Remember me unticked.", "Close the whole browser and reopen the app link."], e: "You must sign in again." },
+    { id: "auth-remember-on", t: "Remember me on", s: ["Sign in with Remember me ticked.", "Close the whole browser and reopen the app link."], e: "You are still signed in." },
+    { id: "auth-reload", t: "Reload keeps you in", s: ["Open any page.", "Press F5."], e: "You stay signed in, on the same page." },
+    { id: "auth-logout", t: "Sign out", s: ["Sign out.", "Press the browser Back button."], e: "No data page opens; you land on sign-in." },
+    { id: "auth-change", t: "Change password", s: ["Change your password.", "Sign out and sign in with the new password.", "Try the old password too."], e: "The new password works. The old one is rejected." },
+    { id: "auth-admin-reset", t: "Password reset by the admin", s: ["As CEO, open Staff and click Reset password for a test staff member.", "Sign in as that staff member with the new password."], e: "Sign-in works with the new password, and the old password is rejected. (No email is sent: SMTP is not set up for testing.)" },
+    { id: "auth-forgot-unknown", t: "Forgot password, unknown email", s: ["Request a reset for an email that has no account."], e: "The same message shows as for a real email. It must not reveal which emails exist." },
+    { id: "auth-reset-broken", t: "Broken reset link", s: ["Open /reset-password with nothing after it."], e: "The page explains the link is incomplete." },
+    { id: "auth-two-companies", t: "Same email in two companies", s: ["Sign in with an email that exists in two companies."], e: "Sign-in asks which company, then opens the one you chose." }
+  ]},
+  { id: "access-control", title: "Staff, roles and permissions", intro: "Main check: a user sees and does only what their role allows, and a change applies without signing out.", cases: [
+    { id: "ac-branches", t: "Add branches", s: ["As CEO, add two branches (names starting with your initials). Fill everything the form asks for.", "Search for one, then reload the page."], e: "Both are saved, and the search result is still correct after reload." },
+    { id: "ac-staff", t: "Add a staff member", s: ["As CEO, add a staff member with one of the 10 roles and their branch or branches.", "Sign in as them."], e: "They can sign in and must change their password first." },
+    { id: "ac-roles-fixed", t: "Roles are fixed", s: ["As CEO, open Roles."], e: "The 10 roles are listed. There is no way to add, rename or delete a role." },
+    { id: "ac-live", t: "Grid change applies live", s: ["As CEO, open Permissions and change one cell for Sales Executive, for example View leads from Own to Branch.", "In the Sales Executive's browser, refresh the page."], e: "The change applies without signing out. Put the cell back afterwards." },
+    { id: "ac-grid", t: "Permission grid", s: ["As CEO, change a few cells in the grid.", "Confirm, then reload.", "Use Reset."], e: "Changes are saved after reload. Reset puts them back." },
+    { id: "ac-grid-ceo-only", t: "Only the CEO edits the grid", s: ["Sign in as Regional Manager or Club Manager and open Permissions, if the menu shows it."], e: "The grid cannot be changed by anyone except the CEO." },
+    { id: "ac-assign-floor", t: "Someone besides the CEO keeps Assign", s: ["As CEO, try to set \"Assign / reassign / change owner\" to None for every role except CEO, then save."], e: "Saving is refused with a clear message." },
+    { id: "ac-no-cm", t: "Branch without a Club Manager", s: ["On a test branch, deactivate or change the role of its only Club Manager.", "Open Branches and look at the Club Manager column."], e: "That active branch shows a \"No Club Manager\" warning badge, and it still works (it is not blocked). Restore the Club Manager afterwards." },
+    { id: "ac-scope", t: "Branch scope", s: ["Sign in as Club Manager of branch A.", "Open Staff and Leads, and search for a name from branch B."], e: "Nothing from branch B shows anywhere." },
+    { id: "ac-own", t: "Own scope", s: ["Sign in as a Sales Executive and open Leads."], e: "Only leads they own, or have an open follow-up on, are listed." },
+    { id: "ac-direct-link", t: "Direct link to a blocked page", s: ["As CEO, copy the address of a page a lower role cannot open, for example Permissions.", "Paste it in the lower role's browser."], e: "A no-access page shows, not the data." }
+  ]},
+  { id: "leads", title: "Leads", cases: [
+    { id: "ld-add", t: "Add a lead", s: ["Click Lead.", "Fill Mobile, Name and Source, then Save lead.", "In Set first follow-up, click Later."], e: "\"Lead created · <name>\" shows, the lead profile opens, and its timeline says who created it and who owns it." },
+    { id: "ld-dup", t: "Duplicate mobile", s: ["Click Lead and type the mobile number of a lead that already exists."], e: "A warning shows: Already a lead · name · owner · branch." },
+    { id: "ld-stage", t: "Change stage", s: ["Open a lead, Details tab, Edit details.", "Change Stage from New to Contacted and save.", "Open the Timeline tab."], e: "\"Details saved\" shows, and the timeline says the stage changed from New to Contacted, and by whom." },
+    { id: "ld-lost", t: "Mark as lost", s: ["Open a lead, More, Mark as lost.", "Click Mark as Lost without picking a reason.", "Pick a reason and confirm."], e: "Without a reason: \"Choose a reason.\" With one: the lead shows Marked as Lost · <reason>." },
+    { id: "ld-reopen", t: "Re-open a lost lead", s: ["On a lost lead, click Re-open lead and confirm."], e: "The lead is open again and the app asks for the next follow-up." },
+    { id: "ld-list", t: "Leads list and stage filter", s: ["Close the profile and look at the Leads list.", "Click a stage count button."], e: "The lead's row shows its current stage, and the stage buttons filter the list." },
+    { id: "ld-phone", t: "Leads on a phone", s: ["Open Leads on a phone, or a narrow browser window."], e: "The page does not scroll sideways, and a lead opens and closes normally." }
+  ]},
+  { id: "followups", title: "Follow-ups, Today and notifications", cases: [
+    { id: "fu-first", t: "Set the first follow-up", s: ["Add a lead.", "In Set first follow-up, pick In 3 days and save."], e: "\"Follow-up set for <name>\" shows." },
+    { id: "fu-outcome", t: "Log an outcome", s: ["On a lead with a follow-up due, click Log outcome.", "Pick Interested, save, then save the next follow-up."], e: "The outcome is on the timeline and the next follow-up is set." },
+    { id: "fu-owner", t: "Change owner and move", s: ["Change a lead's owner.", "Move the lead to another branch, if your role allows it."], e: "The new owner and branch show on the lead and its timeline." },
+    { id: "td-empty", t: "Today when nothing is due", s: ["Sign in as a user with no leads, and open Today."], e: "A greeting with your name and \"All caught up. Nothing needs you right now.\"" },
+    { id: "td-sections", t: "Today sections", s: ["With some overdue, due-today and unassigned leads, open Today."], e: "It shows how many things need you, and the Today menu item shows a count badge." },
+    { id: "td-actions", t: "Today actions", s: ["Overdue: Add follow-up with a custom date for today.", "Due today: Log outcome.", "Unassigned: Assign an owner."], e: "Each lead moves to the right section, ending with \"Nothing due today\" and \"Every lead has an owner\"." },
+    { id: "td-viewall", t: "View all", s: ["In Overdue or not set, click View all."], e: "The Leads list opens with those leads." },
+    { id: "nt-bell", t: "Notification bell", s: ["Get a notice, for example by having someone assign you a lead.", "Click the bell and open the notice.", "Mark everything read."], e: "The bell shows the new notice, opens its lead, and the count clears." }
+  ]},
+  { id: "clients", title: "Turning a lead into a client", intro: "A package is ready for you: \"Monthly Membership\", 30 days, ₹2,999, in all 4 branches. Pick it in the Package step. Do not change or switch off this package.", cases: [
+    { id: "cv-full", t: "Convert a lead, paid in full", s: ["Open a lead you created and click Convert to Client.", "Go through the 6 steps with Next: Details, Package, Sale & start, Corporate entry, Summary, Payment.", "In Corporate entry, type any FF ID, for example your initials and a number.", "In Payment, pay the full \"Total to pay\" and click Save payment."], e: "\"<name> is now a client\" shows with a client number, a receipt number and \"paid in full\"." },
+    { id: "cv-required", t: "Can't skip what is needed", s: ["Start Convert to Client.", "Click Next without choosing a package.", "Later, leave FF ID empty and click Next."], e: "A message tells you what is missing (\"Choose a package.\", \"FF ID is required…\"), and you stay on that step." },
+    { id: "cv-balance", t: "Pay part now, the rest later", s: ["Convert a lead and pay less than the total.", "Pick a Balance due date and save.", "Open Today."], e: "The done screen shows the balance and its due date. On Today, the person is listed under \"Payment due\"." },
+    { id: "cv-minimum", t: "Paying too little", s: ["In the Payment step, enter an amount below the minimum shown under the amount."], e: "The minimum line turns red and the payment is not saved." },
+    { id: "cv-numbers", t: "Client and receipt numbers", s: ["Convert two leads in the same branch.", "Write down both client numbers and receipt numbers."], e: "Each client gets a different client number, and each payment a different receipt number." },
+    { id: "cv-dup-ref", t: "Same payment reference twice", s: ["Convert a lead and pay by a method that asks for a reference. Use a reference like QA-RK-001.", "Convert another lead and type the same reference.", "Tick \"This is a different payment\", write a reason and save.", "Sign in as CEO and open Today."], e: "The second time, a warning says \"This reference was used before.\" and who used it. You can save only after ticking the box. The CEO sees the payment under \"Flagged payments\"." },
+    { id: "cv-flagged-ceo", t: "Only the CEO sees flagged payments", s: ["After the case above, sign in as a Club Manager or Sales Manager and open Today."], e: "There is no \"Flagged payments\" section." },
+    { id: "cv-bank", t: "Bank transfer name", s: ["In the Payment step, open the payment method list."], e: "It shows \"Bank transfer (NEFT / IMPS / Net banking)\". There is no separate \"Net banking\"." },
+    { id: "cv-cancel", t: "Stop halfway", s: ["Start Convert to Client, fill a few steps, then click Cancel."], e: "\"Conversion not saved\" shows, and the person is still a lead." }
+  ]},
+  { id: "branches", title: "Branches and regions", cases: [
+    { id: "rg-add", t: "Add a region", s: ["As CEO, open Settings, then Regions.", "Click New region, type a name starting with your initials and save.", "Reload the page."], e: "The region is in the list after reload." },
+    { id: "br-form", t: "New branch form", s: ["As CEO, open Branches and add a branch.", "Pick a Region, and fill City, State and PIN. GSTIN is optional.", "Try saving with a PIN of only 5 digits, then fix it."], e: "With a wrong PIN a message shows and nothing is saved. With a correct 6-digit PIN the branch is saved with its region." },
+    { id: "br-region-filter", t: "Filter branches by region", s: ["On Branches, pick a region in the region filter."], e: "Only that region's branches are listed. A branch with no region shows \"Region not set\"." },
+    { id: "br-switcher", t: "Branch switcher at the top", s: ["Click the branch switcher at the top of the page.", "If there are 6 or more branches, type part of a branch name in the search box."], e: "Branches are grouped under their region. The search narrows the list to matching branches." }
+  ]},
+  { id: "settings", title: "Settings and master data", cases: [
+    { id: "st-sources", t: "Lead source for one branch", s: ["Create a lead source for one branch only.", "Open Quick lead for that branch, then switch to another branch."], e: "The source shows only for its branch, and switching branch clears it." },
+    { id: "st-lost", t: "Lost reasons", s: ["Add, edit and deactivate a lost reason."], e: "Changes show at once in Mark as lost." },
+    { id: "st-tax", t: "Tax categories", s: ["Add, edit and deactivate a tax category."], e: "The list updates correctly and stays after reload." },
+    { id: "st-rules", t: "Sales rules", s: ["Change a sales rule and save.", "Reload."], e: "The change is kept." },
+    { id: "st-values", t: "Settings values", s: ["Change values, including one that is not allowed.", "Confirm, then Reset."], e: "Invalid values show an inline message. Confirm saves; Reset restores the defaults." },
+    { id: "st-integrations", t: "Email and WhatsApp settings (CEO only)", s: ["As CEO, open Integrations > Email.", "As a lower role, try the same page."], e: "The CEO can edit the company settings. Saved secrets never show in full. Lower roles cannot open it." },
+    { id: "st-activity", t: "Activity feed", s: ["Make a few changes, then open Activity."], e: "Each change shows who made it, when, and a readable summary, grouped per action." },
+    { id: "st-shell", t: "Menu on desktop and tablet", s: ["On desktop, collapse the sidebar.", "Open the app on a tablet."], e: "The sidebar groups menus and marks the active page, collapses to icons, and starts as icons on a tablet." }
+  ]},
+  { id: "bugs", title: "Reporting a bug", intro: "Mark the case Fail and write the note like this. Send a screenshot to the developer on WhatsApp.", info: [
+    "What you did: the steps, in order.",
+    "What happened, and what you expected.",
+    "Which account and role you used, and the branch.",
+    "The page address, and the time it happened (so the developer can find it in the logs).",
+    "Phone or computer, and the browser."
+  ]}
+];
+
+const LABELS = { pass: "Pass", fail: "Fail", blocked: "Blocked" };
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
+const store = { get(k) { try { return localStorage.getItem(k); } catch { return null; } }, set(k, v) { try { localStorage.setItem(k, v); } catch {} } };
+const allCases = GUIDE.flatMap((s) => (s.cases ?? []).map((c) => ({ ...c, section: s.title })));
+
+let RELEASES = [];
+const CHANGE = { added: ["new", "Added"], changed: ["changed", "Changed"], removed: ["removed", "Removed"] };
+const GROUPS = [["new", "New"], ["fixed", "Fixed"], ["changed", "Changed"]];
+
+function latestCase(id) {
+  const c = RELEASES[0]?.cases?.find((x) => x.id === id);
+  return c ? `<span class="pill ${CHANGE[c.change]?.[0] ?? "changed"}">${CHANGE[c.change]?.[1] ?? "Changed"} in ${esc(RELEASES[0].version)}</span>` : "";
+}
+
+function releaseHtml(r) {
+  const items = r.items ?? [];
+  const cases = r.cases ?? [];
+  return `<div class="rel">
+    <div><span class="ver">${esc(r.version)}</span> · ${esc(r.date)}</div>
+    ${GROUPS.map(([k, label]) => {
+      const list = items.filter((i) => i.type === k);
+      return `<h3>${label}</h3>${list.length ? `<ul>${list.map((i) => `<li>${esc(i.text)}</li>`).join("")}</ul>` : `<p class="lead">None.</p>`}`;
+    }).join("")}
+    <h3>Test cases added or changed</h3>
+    ${cases.length ? `<ul>${cases.map((c) => {
+      const known = allCases.find((x) => x.id === c.id);
+      const name = known ? `<a href="#case-${esc(c.id)}">${esc(known.t)}</a>` : esc(c.id);
+      const [cls, label] = CHANGE[c.change] ?? ["changed", c.change];
+      return `<li>${name} <span class="pill ${cls}">${esc(label)}</span>${c.note ? ` · ${esc(c.note)}` : ""}</li>`;
+    }).join("")}</ul>` : `<p class="lead">None.</p>`}
+  </div>`;
+}
+
+function renderWhatsNew() {
+  const el = document.getElementById("whatsnew");
+  if (!RELEASES.length) { el.innerHTML = ""; return; }
+  const [latest, ...older] = RELEASES;
+  const options = (sel) => RELEASES.map((r, i) => `<option value="${i}"${i === sel ? " selected" : ""}>${esc(r.version)} · ${esc(r.date)}</option>`).join("");
+  el.innerHTML = `
+    <h2>What's new</h2>
+    <div class="card">${releaseHtml(latest)}</div>
+    ${older.length ? `
+      <h2>Older versions</h2>
+      <div class="card">
+        ${older.map((r) => `<details><summary>${esc(r.version)} · ${esc(r.date)}</summary>${releaseHtml(r)}</details>`).join("")}
+      </div>
+      <h2>Compare two versions</h2>
+      <div class="card cmp">
+        <div><select id="cmpA">${options(1)}</select><div id="cmpAOut"></div></div>
+        <div><select id="cmpB">${options(0)}</select><div id="cmpBOut"></div></div>
+      </div>` : ""}`;
+  for (const side of ["A", "B"]) {
+    const sel = document.getElementById("cmp" + side);
+    if (!sel) continue;
+    const show = () => (document.getElementById(`cmp${side}Out`).innerHTML = releaseHtml(RELEASES[Number(sel.value)]));
+    sel.onchange = show;
+    show();
+  }
+}
+
+async function loadReleases() {
+  try {
+    const r = await fetch("/__releases");
+    RELEASES = r.ok ? (await r.json()).releases ?? [] : [];
+  } catch { RELEASES = []; }
+}
+
+async function load(tester, key) {
+  const q = key ? `?key=${encodeURIComponent(key)}` : tester ? `?tester=${encodeURIComponent(tester)}` : "";
+  const r = await fetch("/__results" + q);
+  return r.ok ? r.json() : { testers: {} };
+}
+
+async function save(tester, caseId, entry) {
+  const r = await fetch("/__results", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ tester, caseId, ...entry }) });
+  return r.ok;
+}
+
+function renderGuide(data) {
+  let tester = store.get("fl-tester") ?? "";
+  const mine = () => data.testers[tester] ?? {};
+  const el = document.getElementById("guide");
+  el.innerHTML = `
+    <div class="card who">
+      <label for="tester"><b>Your name</b></label>
+      <input type="text" id="tester" value="${esc(tester)}" placeholder="e.g. Rahul K" maxlength="40">
+      <button class="btn" id="setTester">Save name</button>
+      <span class="progress" id="progress"></span>
+    </div>
+    ${GUIDE.map((s) => `
+      <h2>${esc(s.title)}</h2>
+      ${s.intro ? `<p class="lead">${esc(s.intro)}</p>` : ""}
+      ${s.info ? `<div class="card"><ul>${s.info.map((i) => `<li>${esc(i)}</li>`).join("")}</ul></div>` : ""}
+      ${(s.cases ?? []).map((c) => `
+        <div class="card case" id="case-${c.id}" data-case="${c.id}">
+          <h3>${esc(c.t)} ${latestCase(c.id)}</h3>
+          <ol>${c.s.map((x) => `<li>${esc(x)}</li>`).join("")}</ol>
+          <div class="expect"><b>Expected:</b> ${esc(c.e)}</div>
+          <div class="row">${Object.entries(LABELS).map(([k, v]) => `<button class="st" data-s="${k}">${v}</button>`).join("")}<span class="saved"></span></div>
+          <textarea placeholder="Note (required for Fail: steps, what happened, account, time)"></textarea>
+        </div>`).join("")}
+    `).join("")}`;
+
+  const paint = () => {
+    const m = mine();
+    el.querySelectorAll(".case").forEach((card) => {
+      const r = m[card.dataset.case];
+      card.querySelectorAll(".st").forEach((b) => b.classList.toggle("on", r?.status === b.dataset.s));
+      card.querySelector("textarea").value = r?.note ?? "";
+      card.querySelector(".saved").textContent = r ? `Saved ${new Date(r.at).toLocaleString()}` : "";
+    });
+    const done = allCases.filter((c) => m[c.id]?.status).length;
+    document.getElementById("progress").textContent = tester ? `${done} of ${allCases.length} cases done` : "Enter your name to start.";
+  };
+
+  const commit = async (card, status) => {
+    if (!tester) { alert("Enter and save your name first."); return; }
+    const id = card.dataset.case;
+    const note = card.querySelector("textarea").value.trim();
+    const prev = mine()[id];
+    status = status ?? prev?.status;
+    if (!status) return;
+    if (status === "fail" && !note) { card.querySelector("textarea").focus(); card.querySelector(".saved").textContent = "Add a note for Fail."; return; }
+    const entry = { status, note, at: new Date().toISOString() };
+    if (await save(tester, id, entry)) { (data.testers[tester] ??= {})[id] = entry; paint(); }
+    else card.querySelector(".saved").textContent = "Not saved. Check the connection and try again.";
+  };
+
+  document.getElementById("setTester").onclick = async () => {
+    tester = document.getElementById("tester").value.trim();
+    store.set("fl-tester", tester);
+    data = await load(tester);
+    paint();
+  };
+  el.querySelectorAll(".case").forEach((card) => {
+    card.querySelectorAll(".st").forEach((b) => (b.onclick = () => commit(card, b.dataset.s)));
+    card.querySelector("textarea").onchange = () => commit(card);
+  });
+  paint();
+}
+
+function renderResults(data) {
+  document.getElementById("guide").classList.add("hide");
+  document.getElementById("top").classList.add("hide");
+  const el = document.getElementById("results");
+  el.classList.remove("hide");
+  if (data.own) { el.innerHTML = `<div class="card">All results need the owner link.</div>`; return; }
+  const names = Object.keys(data.testers).sort();
+  const count = (st) => names.reduce((n, t) => n + Object.values(data.testers[t]).filter((r) => r.status === st).length, 0);
+  el.innerHTML = names.length === 0 ? `<div class="card">No results yet.</div>` : `
+    <p class="lead">${names.length} tester(s) · <span class="pill pass">${count("pass")} pass</span> <span class="pill fail">${count("fail")} fail</span> <span class="pill blocked">${count("blocked")} blocked</span> · refresh to update</p>
+    <div class="card tbl"><table>
+      <thead><tr><th>Case</th>${names.map((n) => `<th>${esc(n)}</th>`).join("")}</tr></thead>
+      <tbody>${allCases.map((c) => `<tr><td><b>${esc(c.t)}</b><div class="note">${esc(c.section)}</div></td>${names.map((n) => {
+        const r = data.testers[n][c.id];
+        return `<td>${r ? `<span class="pill ${r.status}">${LABELS[r.status]}</span>${r.note ? `<div class="note">${esc(r.note)}</div>` : ""}` : ""}</td>`;
+      }).join("")}</tr>`).join("")}</tbody>
+    </table></div>`;
+}
+
+const onResults = location.pathname.replace(/\/$/, "").endsWith("/results");
+Promise.all([
+  load(onResults ? "" : store.get("fl-tester") ?? "", onResults ? new URLSearchParams(location.search).get("key") : ""),
+  onResults ? null : loadReleases(),
+]).then(([data]) => {
+  if (onResults) return renderResults(data);
+  renderWhatsNew();
+  renderGuide(data);
+  if (location.hash) document.querySelector(location.hash)?.scrollIntoView();
+});
+</script>
+</body>
+</html>
