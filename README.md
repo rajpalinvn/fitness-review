@@ -75,6 +75,11 @@ Flagged files are **rejected and not published**. Test-data identifiers like `@f
 | 2026-11-20 | design | Tablet check (iPad portrait and landscape) | [`design/2026-11-20-qa-tablet/`](design/2026-11-20-qa-tablet/) |
 | 2026-11-20 | design | Fixes 10–12: login row, tablet filter bar, heading button | [`design/2026-11-20-tablet-fixes/`](design/2026-11-20-tablet-fixes/) |
 | 2026-11-20 | design | QA Part B: mockup parity at 1280 and 1024 (11 fixes, 11 decisions) | [`design/2026-11-20-mockup-parity/`](design/2026-11-20-mockup-parity/) |
+| 2026-11-20 | design | Findings 1–2: sidebar labels clip, resize restores sidebar (not merged) | [`design/2026-11-20-sidebar-labels/`](design/2026-11-20-sidebar-labels/) |
+| 2026-11-20 | teammate | DESIGN merges round 2: login-row, filter-bar-tablet, heading-button, forms | [`teammate/2026-11-20-design-merges-2/`](teammate/2026-11-20-design-merges-2/) |
+| 2026-11-20 | teammate | Stage 4c plan: "Sell here" cross-branch sale (4 open questions) | [`teammate/2026-11-20-stage-4c-plan/`](teammate/2026-11-20-stage-4c-plan/) |
+| 2026-11-20 | design | S1: top bar names the open page (not merged) | [`design/2026-11-20-S1/`](design/2026-11-20-S1/) |
+| 2026-11-20 | design | S3: Packages status badge (not merged) | [`design/2026-11-20-S3/`](design/2026-11-20-S3/) |
 | 2026-11-20 | build | Stage 5: Clients list + client profile | [`build/2026-11-20-stage-5-clients/`](build/2026-11-20-stage-5-clients/) |
 
 ---
