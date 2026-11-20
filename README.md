@@ -67,6 +67,8 @@ Flagged files are **rejected and not published**. Test-data identifiers like `@f
 | 2026-11-20 | teammate | Stage 5 clients merge report | [`teammate/2026-11-20-stage-5-clients/`](teammate/2026-11-20-stage-5-clients/) |
 | 2026-11-20 | design | Sidebar opened out at 1280 (adds to sidebar) | [`design/2026-11-20-sidebar-expanded/`](design/2026-11-20-sidebar-expanded/) |
 | 2026-11-20 | design | Forms: two-column sections in drawers (not merged) | [`design/2026-11-20-forms/`](design/2026-11-20-forms/) |
+| 2026-11-20 | teammate | Stage 5b merge report: client follow-ups and key fob | [`teammate/2026-11-20-stage-5b/`](teammate/2026-11-20-stage-5b/) |
+| 2026-11-20 | design | QA Part A: responsive and transition findings (12 findings, 3 decisions) | [`design/2026-11-20-qa-responsive/`](design/2026-11-20-qa-responsive/) |
 | 2026-11-20 | build | Stage 5: Clients list + client profile | [`build/2026-11-20-stage-5-clients/`](build/2026-11-20-stage-5-clients/) |
 
 ---

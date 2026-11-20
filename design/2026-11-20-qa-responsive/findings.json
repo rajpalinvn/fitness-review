@@ -1,0 +1,38 @@
+[
+  {
+    "page": "client-profile",
+    "width": 390,
+    "issue": "dialog content scrolls sideways by 195px",
+    "shot": "reload-client-profile--client-profile-390.png"
+  },
+  {
+    "page": "today",
+    "width": 1440,
+    "issue": "rail toggle (app sb-collapsed -> app): \"Permissions\" draws 56px past the sidebar 52ms in",
+    "shot": "toggle--mid-1440-1.png"
+  },
+  {
+    "page": "today",
+    "width": 1280,
+    "issue": "rail toggle (app sb-collapsed -> app): \"Permissions\" draws 56px past the sidebar 39ms in",
+    "shot": "toggle--mid-1280-1.png"
+  },
+  {
+    "page": "today",
+    "width": 1024,
+    "issue": "rail toggle (app sb-collapsed -> app sb-overlay-open): \"Permissions\" draws 56px past the sidebar 53ms in",
+    "shot": "toggle--mid-1024-0.png"
+  },
+  {
+    "page": "today",
+    "width": 900,
+    "issue": "rail toggle (app sb-collapsed -> app sb-overlay-open): \"Permissions\" draws 56px past the sidebar 65ms in",
+    "shot": "toggle--mid-900-0.png"
+  },
+  {
+    "page": "lead-profile",
+    "width": 390,
+    "issue": "dialog content scrolls sideways by 81px",
+    "shot": "dialogs--lead-profile-390.png"
+  }
+]
