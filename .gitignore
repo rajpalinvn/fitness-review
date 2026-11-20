@@ -1,0 +1,15 @@
+# ── Inbox (agent drop zone – never committed) ──────────────────────────
+inbox/
+
+# ── Secrets & credentials ───────────────────────────────────────────────
+.env*
+*.local.*
+*secret*
+*password*
+*token*
+*.key
+*.pfx
+*.bak
+
+# ── Dependencies ─────────────────────────────────────────────────────────
+node_modules/
