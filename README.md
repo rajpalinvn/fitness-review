@@ -69,6 +69,12 @@ Flagged files are **rejected and not published**. Test-data identifiers like `@f
 | 2026-11-20 | design | Forms: two-column sections in drawers (not merged) | [`design/2026-11-20-forms/`](design/2026-11-20-forms/) |
 | 2026-11-20 | teammate | Stage 5b merge report: client follow-ups and key fob | [`teammate/2026-11-20-stage-5b/`](teammate/2026-11-20-stage-5b/) |
 | 2026-11-20 | design | QA Part A: responsive and transition findings (12 findings, 3 decisions) | [`design/2026-11-20-qa-responsive/`](design/2026-11-20-qa-responsive/) |
+| 2026-11-20 | teammate | Step B merges: buttons, sidebar, forms | [`teammate/2026-11-20-merges-b/`](teammate/2026-11-20-merges-b/) |
+| 2026-11-20 | teammate | Bug fix: lead row click opens profile | [`teammate/2026-11-20-lead-drawer-bug/`](teammate/2026-11-20-lead-drawer-bug/) |
+| 2026-11-20 | teammate | "What's new" panel merge report | [`teammate/2026-11-20-whats-new/`](teammate/2026-11-20-whats-new/) |
+| 2026-11-20 | design | Tablet check (iPad portrait and landscape) | [`design/2026-11-20-qa-tablet/`](design/2026-11-20-qa-tablet/) |
+| 2026-11-20 | design | Fixes 10–12: login row, tablet filter bar, heading button | [`design/2026-11-20-tablet-fixes/`](design/2026-11-20-tablet-fixes/) |
+| 2026-11-20 | design | QA Part B: mockup parity at 1280 and 1024 (11 fixes, 11 decisions) | [`design/2026-11-20-mockup-parity/`](design/2026-11-20-mockup-parity/) |
 | 2026-11-20 | build | Stage 5: Clients list + client profile | [`build/2026-11-20-stage-5-clients/`](build/2026-11-20-stage-5-clients/) |
 
 ---

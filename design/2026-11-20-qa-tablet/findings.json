@@ -1,0 +1,20 @@
+[
+  {
+    "page": "today",
+    "width": 1024,
+    "issue": "rail toggle (app sb-collapsed -> app sb-overlay-open): \"Permissions\" draws 56px past the sidebar 39ms in",
+    "shot": "toggle--mid-1024-0.png"
+  },
+  {
+    "page": "today",
+    "width": 1180,
+    "issue": "rail toggle (app sb-collapsed -> app): \"Permissions\" draws 56px past the sidebar 39ms in",
+    "shot": "toggle--mid-1180-1.png"
+  },
+  {
+    "page": "today",
+    "width": 1194,
+    "issue": "rail toggle (app sb-collapsed -> app): \"Permissions\" draws 56px past the sidebar 41ms in",
+    "shot": "toggle--mid-1194-1.png"
+  }
+]
