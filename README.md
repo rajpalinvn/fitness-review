@@ -59,6 +59,11 @@ Flagged files are **rejected and not published**. Test-data identifiers like `@f
 | 2026-11-20 | design | Batch 1b: css-tokens-round | [`design/2026-11-20-css-tkn-round/`](design/2026-11-20-css-tkn-round/) |
 | 2026-11-20 | design | Batch 2: states | [`design/2026-11-20-states/`](design/2026-11-20-states/) |
 | 2026-11-20 | design | Batch 3: badge | [`design/2026-11-20-badge/`](design/2026-11-20-badge/) |
+| 2026-11-20 | design | Batch 4: buttons | [`design/2026-11-20-buttons/`](design/2026-11-20-buttons/) |
+| 2026-11-20 | design | Sidebar sections (not merged) | [`design/2026-11-20-sidebar/`](design/2026-11-20-sidebar/) |
+| 2026-11-20 | teammate | design/badge merge report | [`teammate/2026-11-20-design-badge/`](teammate/2026-11-20-design-badge/) |
+| 2026-11-20 | teammate | Multi-branch rule merge report | [`teammate/2026-11-20-multi-branch-rule/`](teammate/2026-11-20-multi-branch-rule/) |
+| 2026-11-20 | teammate | Stage 5b plan: client follow-ups and key fob (3 open questions) | [`teammate/2026-11-20-stage-5b-plan/`](teammate/2026-11-20-stage-5b-plan/) |
 
 ---
 
