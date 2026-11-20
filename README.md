@@ -65,6 +65,7 @@ Flagged files are **rejected and not published**. Test-data identifiers like `@f
 | 2026-11-20 | teammate | Multi-branch rule merge report | [`teammate/2026-11-20-multi-branch-rule/`](teammate/2026-11-20-multi-branch-rule/) |
 | 2026-11-20 | teammate | Stage 5b plan: client follow-ups and key fob (3 open questions) | [`teammate/2026-11-20-stage-5b-plan/`](teammate/2026-11-20-stage-5b-plan/) |
 | 2026-11-20 | teammate | Stage 5 clients merge report | [`teammate/2026-11-20-stage-5-clients/`](teammate/2026-11-20-stage-5-clients/) |
+| 2026-11-20 | build | Stage 5: Clients list + client profile | [`build/2026-11-20-stage-5-clients/`](build/2026-11-20-stage-5-clients/) |
 
 ---
 
