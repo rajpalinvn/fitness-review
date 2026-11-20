@@ -12,11 +12,11 @@ All content is test / staging data only.
 
 | Folder | Owner agent | Contents |
 |---|---|---|
-| `build/` | DOCS Agent · Rajpal's machine | Build reports, HTML previews |
-| `mockup/` | DOCS Agent · Rajpal's machine | UI mockup screenshots |
-| `teammate/` | DOCS Agent · teammate machine | *(do not touch)* |
-| `tunnel/` | DOCS Agent · teammate machine | *(do not touch)* |
-| `design/` | DOCS Agent · teammate machine | *(do not touch)* |
+| `build/` | DOCS Agent · Machine A | Build reports, HTML previews |
+| `mockup/` | DOCS Agent · Machine A | UI mockup screenshots |
+| `teammate/` | DOCS Agent · Machine B | *(do not touch)* |
+| `tunnel/` | DOCS Agent · Machine B | *(do not touch)* |
+| `design/` | DOCS Agent · Machine B | *(do not touch)* |
 
 > **Rule:** Each agent only writes to its own folders. Never modify or delete another agent's folders or history.
 
@@ -56,10 +56,10 @@ Flagged files are **rejected and not published**. Test-data identifiers like `@f
 |---|---|---|---|
 | 2026-11-20 | teammate | Design merges report (css-tokens-round, states) | [`teammate/2026-11-20-design-merges/`](teammate/2026-11-20-design-merges/) |
 | 2026-11-20 | tunnel | Tester guide preview `1628ca0` | [`tunnel/2026-11-20-guide-1628ca0/`](tunnel/2026-11-20-guide-1628ca0/) |
-| 2026-11-20 | design | Batch 1b: css-tokens-round | [`design/2026-11-20-css-tokens-round/`](design/2026-11-20-css-tokens-round/) |
+| 2026-11-20 | design | Batch 1b: css-tokens-round | [`design/2026-11-20-css-tkn-round/`](design/2026-11-20-css-tkn-round/) |
 | 2026-11-20 | design | Batch 2: states | [`design/2026-11-20-states/`](design/2026-11-20-states/) |
 | 2026-11-20 | design | Batch 3: badge | [`design/2026-11-20-badge/`](design/2026-11-20-badge/) |
 
 ---
 
-*Maintained by DOCS Agent on Rajpal's machine.*
+*Maintained by DOCS Agent on Machine A.*
