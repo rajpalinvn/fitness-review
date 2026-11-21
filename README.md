@@ -81,6 +81,10 @@ Flagged files are **rejected and not published**. Test-data identifiers like `@f
 | 2026-11-20 | design | S1: top bar names the open page (not merged) | [`design/2026-11-20-S1/`](design/2026-11-20-S1/) |
 | 2026-11-20 | design | S3: Packages status badge (not merged) | [`design/2026-11-20-S3/`](design/2026-11-20-S3/) |
 | 2026-11-20 | build | Stage 5: Clients list + client profile | [`build/2026-11-20-stage-5-clients/`](build/2026-11-20-stage-5-clients/) |
+| 2026-11-20 | build | Code review: Convert + Collect payment + numbering | [`build/2026-11-20-review-convert/`](build/2026-11-20-review-convert/) |
+| 2026-11-20 | build | Fix: Convert review — FF ID, clients.edit, M3-M6, L7-L9 | [`build/2026-11-20-fix-convert-review/`](build/2026-11-20-fix-convert-review/) |
+| 2026-11-20 | build | Plan: Stage 6 — Book trial (membership, no code yet) | [`build/2026-11-20-stage-6-trials-plan/`](build/2026-11-20-stage-6-trials-plan/) |
+| 2026-11-20 | build | UI rules: FF ID off lead form, notes required, searchable dropdowns | [`build/2026-11-20-ui-rules/`](build/2026-11-20-ui-rules/) |
 
 ---
 
