@@ -85,6 +85,33 @@ Flagged files are **rejected and not published**. Test-data identifiers like `@f
 | 2026-11-20 | build | Fix: Convert review — FF ID, clients.edit, M3-M6, L7-L9 | [`build/2026-11-20-fix-convert-review/`](build/2026-11-20-fix-convert-review/) |
 | 2026-11-20 | build | Plan: Stage 6 — Book trial (membership, no code yet) | [`build/2026-11-20-stage-6-trials-plan/`](build/2026-11-20-stage-6-trials-plan/) |
 | 2026-11-20 | build | UI rules: FF ID off lead form, notes required, searchable dropdowns | [`build/2026-11-20-ui-rules/`](build/2026-11-20-ui-rules/) |
+| 2026-11-20 | design | S4: short number fields (not merged) | [`design/2026-11-20-S4/`](design/2026-11-20-S4/) |
+| 2026-11-20 | design | S5: "Default, can change" badge (not merged) | [`design/2026-11-20-S5/`](design/2026-11-20-S5/) |
+| 2026-11-20 | design | S6: Reset button in the page head (not merged) | [`design/2026-11-20-S6/`](design/2026-11-20-S6/) |
+| 2026-11-20 | design | S7: short search placeholder on a tablet (not merged) | [`design/2026-11-20-S7/`](design/2026-11-20-S7/) |
+| 2026-11-21 | design | S8: names in the Leads and Clients lists | [`design/2026-11-21-S8/`](design/2026-11-21-S8/) |
+| 2026-11-21 | design | S9: narrow country code | [`design/2026-11-21-S9/`](design/2026-11-21-S9/) |
+| 2026-11-21 | design | S10: New lead "after saving" hint | [`design/2026-11-21-S10/`](design/2026-11-21-S10/) |
+| 2026-11-21 | design | S11: Clients count card descriptions | [`design/2026-11-21-S11/`](design/2026-11-21-S11/) |
+| 2026-11-21 | design | D9: the CEO always has the branch picker | [`design/2026-11-21-D9/`](design/2026-11-21-D9/) |
+| 2026-11-21 | design | D10: sentence case for the Clients "Ends on" header | [`design/2026-11-21-D10/`](design/2026-11-21-D10/) |
+| 2026-11-21 | design | D11: dates shown as "20 Nov 2026" | [`design/2026-11-21-D11/`](design/2026-11-21-D11/) |
+| 2026-11-21 | teammate | Stage 4c "Sell here" merge report | [`teammate/2026-11-21-stage-4c-sell-here/`](teammate/2026-11-21-stage-4c-sell-here/) |
+| 2026-11-21 | teammate | BUILD merges: fix-convert-review and ui-rules | [`teammate/2026-11-21-build-merges/`](teammate/2026-11-21-build-merges/) |
+| 2026-11-21 | teammate | Follow-ups page plan | [`teammate/2026-11-21-followups-page-plan/`](teammate/2026-11-21-followups-page-plan/) |
+| 2026-11-21 | teammate | 14 DESIGN branches merged | [`teammate/2026-11-21-design-merges-14/`](teammate/2026-11-21-design-merges-14/) |
+| 2026-11-21 | teammate | Follow-ups page merge report | [`teammate/2026-11-21-followups-page/`](teammate/2026-11-21-followups-page/) |
+| 2026-11-21 | teammate | Profile-parity and stage 6 trials merge report | [`teammate/2026-11-21-profile-parity-trials/`](teammate/2026-11-21-profile-parity-trials/) |
+| 2026-11-21 | teammate | Small fixes after profile-parity and trials | [`teammate/2026-11-21-small-fixes/`](teammate/2026-11-21-small-fixes/) |
+| 2026-11-21 | teammate | Plan: Renew and Source / Inquiry alignment | [`teammate/2026-11-21-renew-source-plan/`](teammate/2026-11-21-renew-source-plan/) |
+| 2026-11-21 | design | Profile QA: lead and client profile, Book trial, Follow-ups (app vs mockup) | [`design/2026-11-21-profile-qa/`](design/2026-11-21-profile-qa/) |
+| 2026-11-21 | design | P1 + P9: Follow-ups table | [`design/2026-11-21-fu-table/`](design/2026-11-21-fu-table/) |
+| 2026-11-21 | design | P2: one due-date format | [`design/2026-11-21-due-format/`](design/2026-11-21-due-format/) |
+| 2026-11-21 | design | P10–P12: Book trial text and layout | [`design/2026-11-21-book-trial/`](design/2026-11-21-book-trial/) |
+| 2026-11-21 | teammate | Source vs Inquiry type merge report | [`teammate/2026-11-21-source-inquiry/`](teammate/2026-11-21-source-inquiry/) |
+| 2026-11-21 | teammate | 3 DESIGN merges | [`teammate/2026-11-21-design-merges-3/`](teammate/2026-11-21-design-merges-3/) |
+| 2026-11-21 | teammate | Trial card limit and used count | [`teammate/2026-11-21-trial-card-counts/`](teammate/2026-11-21-trial-card-counts/) |
+| 2026-11-21 | teammate | Renew: buy next membership in advance | [`teammate/2026-11-21-renew/`](teammate/2026-11-21-renew/) |
 
 ---
 
