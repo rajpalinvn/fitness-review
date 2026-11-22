@@ -112,6 +112,20 @@ Flagged files are **rejected and not published**. Test-data identifiers like `@f
 | 2026-11-21 | teammate | 3 DESIGN merges | [`teammate/2026-11-21-design-merges-3/`](teammate/2026-11-21-design-merges-3/) |
 | 2026-11-21 | teammate | Trial card limit and used count | [`teammate/2026-11-21-trial-card-counts/`](teammate/2026-11-21-trial-card-counts/) |
 | 2026-11-21 | teammate | Renew: buy next membership in advance | [`teammate/2026-11-21-renew/`](teammate/2026-11-21-renew/) |
+| 2026-11-21 | design | P5–P8 + F7: client NEXT STEP and Membership tab (not merged) | [`design/2026-11-21-client/`](design/2026-11-21-client/) |
+| 2026-11-21 | design | Book trial "0 of 2 used" card counts | [`design/2026-11-21-counts/`](design/2026-11-21-counts/) |
+| 2026-11-21 | design | P13–P15: profile polish, one-line receipts | [`design/2026-11-21-polish/`](design/2026-11-21-polish/) |
+| 2026-11-21 | design | P3 + P4: trial wording | [`design/2026-11-21-trial/`](design/2026-11-21-trial/) |
+| 2026-11-21 | teammate | Today Renewals due offers Collect payment | [`teammate/2026-11-21-renewals-collect/`](teammate/2026-11-21-renewals-collect/) |
+| 2026-11-21 | teammate | Plan: Stage 7 PT | [`teammate/2026-11-21-stage7-pt-plan/`](teammate/2026-11-21-stage7-pt-plan/) |
+| 2026-11-21 | teammate | Stage 7a: trainer types | [`teammate/2026-11-21-stage7a-trainer-types/`](teammate/2026-11-21-stage7a-trainer-types/) |
+| 2026-11-21 | teammate | Stage 7b: PT and Premium PT packages | [`teammate/2026-11-21-stage7b-pt-packages/`](teammate/2026-11-21-stage7b-pt-packages/) |
+| 2026-11-21 | teammate | Stage 7c: Premium PT in Convert | [`teammate/2026-11-21-stage7c-premium-pt/`](teammate/2026-11-21-stage7c-premium-pt/) |
+| 2026-11-21 | teammate | Stage 7f: client PT status | [`teammate/2026-11-21-stage7f-pt-status/`](teammate/2026-11-21-stage7f-pt-status/) |
+| 2026-11-22 | teammate | DESIGN merges, 3 of 4 (client-next-step held) | [`teammate/2026-11-22-design-merges-4/`](teammate/2026-11-22-design-merges-4/) |
+| 2026-11-22 | teammate | Stage 7d: PT quotes | [`teammate/2026-11-22-stage7d-pt-quotes/`](teammate/2026-11-22-stage7d-pt-quotes/) |
+| 2026-11-22 | teammate | Stage 7e: PT trials and assessments | [`teammate/2026-11-22-stage7e-assessments/`](teammate/2026-11-22-stage7e-assessments/) |
+| 2026-11-22 | teammate | Stage 7g: client "Buy PT" | [`teammate/2026-11-22-stage7g-buy-pt/`](teammate/2026-11-22-stage7g-buy-pt/) |
 
 ---
 
