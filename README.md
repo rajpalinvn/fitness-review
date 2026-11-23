@@ -126,6 +126,16 @@ Flagged files are **rejected and not published**. Test-data identifiers like `@f
 | 2026-11-22 | teammate | Stage 7d: PT quotes | [`teammate/2026-11-22-stage7d-pt-quotes/`](teammate/2026-11-22-stage7d-pt-quotes/) |
 | 2026-11-22 | teammate | Stage 7e: PT trials and assessments | [`teammate/2026-11-22-stage7e-assessments/`](teammate/2026-11-22-stage7e-assessments/) |
 | 2026-11-22 | teammate | Stage 7g: client "Buy PT" | [`teammate/2026-11-22-stage7g-buy-pt/`](teammate/2026-11-22-stage7g-buy-pt/) |
+| 2026-11-22 | design | Short modals and searchable pickers (not merged) | [`design/2026-11-22-modals/`](design/2026-11-22-modals/) |
+| 2026-11-23 | design | Staff picker UI | [`design/2026-11-23-staff-picker/`](design/2026-11-23-staff-picker/) |
+| 2026-11-22 | teammate | DESIGN client-next-step merged | [`teammate/2026-11-22-design-client-next-step/`](teammate/2026-11-22-design-client-next-step/) |
+| 2026-11-22 | teammate | GT default for new companies | [`teammate/2026-11-22-gt-default/`](teammate/2026-11-22-gt-default/) |
+| 2026-11-22 | teammate | Incentives correction | [`teammate/2026-11-22-incentives/`](teammate/2026-11-22-incentives/) |
+| 2026-11-22 | teammate | Staff picker: server and logic | [`teammate/2026-11-22-staff-picker/`](teammate/2026-11-22-staff-picker/) |
+| 2026-11-22 | teammate | Time zone fix | [`teammate/2026-11-22-time-zone/`](teammate/2026-11-22-time-zone/) |
+| 2026-11-23 | teammate | Nightly catch-up | [`teammate/2026-11-23-nightly-catch-up/`](teammate/2026-11-23-nightly-catch-up/) |
+| 2026-11-23 | teammate | design/picker-overflow merged | [`teammate/2026-11-23-picker-overflow/`](teammate/2026-11-23-picker-overflow/) |
+| 2026-11-23 | teammate | Plan: Stage 8 cross-branch work | [`teammate/2026-11-23-stage-8-plan/`](teammate/2026-11-23-stage-8-plan/) |
 
 ---
 
