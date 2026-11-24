@@ -136,6 +136,9 @@ Flagged files are **rejected and not published**. Test-data identifiers like `@f
 | 2026-11-23 | teammate | Nightly catch-up | [`teammate/2026-11-23-nightly-catch-up/`](teammate/2026-11-23-nightly-catch-up/) |
 | 2026-11-23 | teammate | design/picker-overflow merged | [`teammate/2026-11-23-picker-overflow/`](teammate/2026-11-23-picker-overflow/) |
 | 2026-11-23 | teammate | Plan: Stage 8 cross-branch work | [`teammate/2026-11-23-stage-8-plan/`](teammate/2026-11-23-stage-8-plan/) |
+| 2026-11-21 | build | Profile parity: tabs, timeline, composer | [`build/2026-11-21-profile-parity/`](build/2026-11-21-profile-parity/) |
+| 2026-11-21 | build | Stage 6: Book trial — membership trials (incl. CreateTrials.sql) | [`build/2026-11-21-stage-6-trials/`](build/2026-11-21-stage-6-trials/) |
+| 2026-11-24 | build | Code review 2: integration 8fd54d1 (H1–H4, M1–M13, L1–L10) | [`build/2026-11-24-review-2/`](build/2026-11-24-review-2/) |
 
 ---
 
